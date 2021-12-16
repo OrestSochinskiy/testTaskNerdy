@@ -1,0 +1,7 @@
+<form [formGroup]="filter" (input)="onInput()" class="center">
+  <input class="input-group-text none" type="text" formControlName="title" placeholder="Search by title">
+</form>
+<hr/>
+<div *ngFor="let i of items" class="center">
+  <app-announcment [item]="i"></app-announcment>
+</div>

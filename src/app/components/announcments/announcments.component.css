@@ -1,0 +1,23 @@
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.none{
+  width: 200px;
+  transition: 1s;
+  color: cornsilk;
+}
+
+.none:focus{
+  width: 250px;
+  background-color: #25738d;
+  border: black 5px;
+  outline: none;
+}
+.none:focus::placeholder{
+  color: cornsilk;
+}
+

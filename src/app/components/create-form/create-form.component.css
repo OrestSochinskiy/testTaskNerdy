@@ -1,0 +1,33 @@
+.flex{
+  display: flex;
+}
+.none{
+  width: 200px;
+  height: 30px ;
+  margin-right: 10px;
+  transition: 1s;
+}
+
+.none:focus{
+  color: cornsilk;
+  width: 250px;
+  background-color: #25738d;
+  border: black 5px;
+  outline: none;
+}
+.none:focus::placeholder{
+  color: cornsilk;
+}
+
+.body {
+  height: 55px;
+}
+
+.btn-success:disabled{
+  border-color: #a59b9b;
+  background-color: #a59b9b;
+}
+
+.btn{
+  width: 200px;
+}

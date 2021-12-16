@@ -1,0 +1,9 @@
+<form [formGroup]="this.myForm" (ngSubmit)="this.save()">
+  <div class="form">
+    <div class="flex"><input class="input-group-text none" type="text" formControlName="title" placeholder="title">
+      <p *ngIf="this.myForm.controls['title'].errors?.['required']">input required</p>
+    </div>
+    <input class="input-group-text none body" type="text" formControlName="body" placeholder="body">
+    <button class="btn btn-success active" [disabled]="this.myForm.invalid" type="submit">{{this.type}}</button>
+  </div>
+</form>
